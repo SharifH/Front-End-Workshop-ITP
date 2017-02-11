@@ -1,0 +1,53 @@
+body{
+  background-color: blue;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 9999;
+  display: inline;
+}
+
+ul{
+  list-style: none;
+  /*display: inline-block;*/
+}
+header{
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  font-family: monospace;
+  font-weight: bold;
+  padding-right: 10px;
+}
+li{
+  display: inline-block;
+}
+
+.left{
+  display: inline-block;
+  float: left;
+}
+.right{
+  display: inline-block;
+}
+
+.box{
+  height: 300px;
+  width: 32%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  border: 1px solid black;
+}
+#green-box{
+  background-color: green;
+}
+canvas{
+  z-index: 0;
+  display: inline;
+}
