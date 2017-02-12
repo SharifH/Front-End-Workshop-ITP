@@ -9,3 +9,4 @@ View the obfuscated code, see how the site works. Use jQuery to recreate the fu
 	*	.siblings
 	*	.removeClass()
 	*	.addClass()
+
