@@ -1,8 +1,13 @@
 .orange{
-	background-color: orange;
+	background-color: orange !important;
 }
+/*important command tells it to override other conflicting classes/intstructions*/
 
 .yellow{
 	background-color: yellow;
 }
 
+.bigbox{
+	width: 400px;
+	height: 400px;
+}
