@@ -19,16 +19,29 @@ $(document).ready(function(){
       $ ('.drop.international').show().addClass('open');
       $ ('#slide-down').slideDown(200).addClass('open');
     }
-
   }else{
     $('#slide-down').slideUp(200).removeClass('open');
   }
 });
 
   //Politics
-  // $ ('#primary-nav .Politics').on('click',function(e){
-  //   e.preventDefault();
-  //   $ ('primary-nav .Politics').siblings().removeClass()
-  // });
+  $ ('#primary-nav .politics').on('click',function(e){
+    e.preventDefault();
+    $ ('#primary-nav .politics').siblings().removeClass('active');
+    $('#primary-nav .politics').toggleClass('active');
+    if($('#primary-nav .politics').hasClass('.active')){
+      if ($('#slide-down').hasClass('open')) {
+        $('#slide-down .drop.open').hide().removeClass('open');
+        $('.drop.politics').show().addClass('.open');
+        console.log('this is sibling Politics working')
+      }else{
+        $('#slide-down .drop').hide();
+        $ ('.drop.politics').show().addClass('open');
+        $ ('#slide-down').slideDown(200).addClass('open');
+      }
+    } else{
+      $('#slide-down').slideUp(200).removeClass('open');
+    }
+  });
 
 });
