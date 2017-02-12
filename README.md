@@ -10,6 +10,10 @@
 
 [Mozilla Dev Network](https://developer.mozilla.org/en-US/)
 
+[jQuery Cheat Sheet](https://oscarotero.com/jquery/)
+
+[Git Cheat Sheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+
 
 ###What are these files
 ---
