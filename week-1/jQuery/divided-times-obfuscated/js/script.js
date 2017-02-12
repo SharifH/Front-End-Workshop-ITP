@@ -11,6 +11,8 @@
 $(document).ready(function(){
 
 //e means event.
+
+//INTERNATIONAL
 //#primary-nav is an unordered list; international is a class. select both please
 	$('#primary-nav .international').on('click', function(e){
 
@@ -25,14 +27,57 @@ $(document).ready(function(){
 		if($('#primary-nav .international').hasClass('active')){
 			if($('#slide-down').hasClass('open')){
 				$('slide-down .drop.open').hide().removeClass('open');
-				$('drop.international').show().addClass('open');
+				$('.drop.international').show().addClass('open');
+				// console.log('this is working INTERNATIONAL!');
+			} else {
+				$('#slide-down .drop').hide();
+				$('.drop.international').show().addClass('open');
+				$('#slide-down').slideDown(200).addClass('open');
 			}
+		}else{
+			$('#slide-down').slideUp(200).removeClass('open');
+		}
+
+	});//end of international
+
+//POLITICS
+	$('#primary-nav .politics').on('click', function(e){
+
+		e.preventDefault();
+
+		$('#primary-nav .politics').siblings().removeClass('active');
+		$('#primary-nav .politics').toggleClass('active');
+
+		if($('#primary-nav .politics').hasClass('active')){
+			if($('#slide-down').hasClass('open')){
+				$('slide-down .drop.open').hide().removeClass('open');
+				$('.drop.politics').show().addClass('open');
+				// console.log('this is working POLITICS!');
+			} else {
+				$('#slide-down .drop').hide();
+				$('.drop.politics').show().addClass('open');
+				$('#slide-down').slideDown(6000).addClass('open');
+			}
+		} else{
+				$('#slide-down').slideUp(6000).removeClass('open');
 
 		}
 
-	})//end of international
+	});//end of politics
 
+//BUSINESS
 
+	$('#primary-nav .business').on('click', function(e){
 
+		e.preventDefault();
+
+		$('#primary-nav .business').siblings().removeClass('active');
+		$('#primary-nav .business').toggleClass('active');
+
+		if($('primary-nav .business').hasClass('active')){
+			if($('#slide-down').)
+		}
+
+	})//end of business
 
 })
