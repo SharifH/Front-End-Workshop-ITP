@@ -5,12 +5,12 @@ $(".red").addClass("bigbox");
 // });
 
 $(".red").click(function(){
-  $(this).toggleClass("orange")
+  // $(this).toggleClass("orange")
   $ (".red").toggleClass("orange");
 });
 
-$(".red").on("click", doSomething);
-
-function doSomething (){
-  
-}
+// $(".red").on("click", doSomething);
+//
+// function doSomething (){
+//
+// }
