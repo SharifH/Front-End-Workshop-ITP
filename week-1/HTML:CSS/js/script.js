@@ -6,4 +6,11 @@ $(".red").addClass("bigbox");
 
 $(".red").click(function(){
   $(this).toggleClass("orange")
-})
+  $ (".red").toggleClass("orange");
+});
+
+$(".red").on("click", doSomething);
+
+function doSomething (){
+  
+}
