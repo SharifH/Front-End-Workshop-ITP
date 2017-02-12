@@ -1,0 +1,1 @@
+$(".red").addClass("yellow bigbox");
