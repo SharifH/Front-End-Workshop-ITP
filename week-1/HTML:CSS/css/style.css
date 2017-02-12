@@ -1,5 +1,5 @@
 .orange {
-	background-color: orange;
+	background-color: orange !important;
 }
 .yellow {
 	background-color: yellow;
@@ -7,4 +7,5 @@
 
 .bigbox {
 	width:400px;
+	height:400px;
 }
