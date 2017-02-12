@@ -56,17 +56,16 @@ $(document).ready(function(){
 			} else {
 				$('#slide-down .drop').hide();
 				$('.drop.politics').show().addClass('open');
-				$('#slide-down').slideDown(6000).addClass('open');
+				$('#slide-down').slideDown(200).addClass('open');
 			}
 		} else{
-				$('#slide-down').slideUp(6000).removeClass('open');
+				$('#slide-down').slideUp(200).removeClass('open');
 
 		}
 
 	});//end of politics
 
 //BUSINESS
-
 	$('#primary-nav .business').on('click', function(e){
 
 		e.preventDefault();
@@ -74,10 +73,96 @@ $(document).ready(function(){
 		$('#primary-nav .business').siblings().removeClass('active');
 		$('#primary-nav .business').toggleClass('active');
 
-		if($('primary-nav .business').hasClass('active')){
-			if($('#slide-down').)
+		if($('#primary-nav .business').hasClass('active')){
+			if($('#slide-down').hasClass('open')){
+				$('slide-down .drop.open').hide().removeClass('open');
+				$('.drop.business').show().addClass('open');
+				// console.log('this is working POLITICS!');
+			} else {
+				$('#slide-down .drop').hide();
+				$('.drop.business').show().addClass('open');
+				$('#slide-down').slideDown(200).addClass('open');
+			}
+		} else{
+				$('#slide-down').slideUp(200).removeClass('open');
+
 		}
 
-	})//end of business
+	});//end of BUSINESS
+
+	//TECHNOLOGY
+	$('#primary-nav .technology').on('click', function(e){
+
+		e.preventDefault();
+
+		$('#primary-nav .technology').siblings().removeClass('active');
+		$('#primary-nav .technology').toggleClass('active');
+
+		if($('#primary-nav .technology').hasClass('active')){
+			if($('#slide-down').hasClass('open')){
+				$('slide-down .drop.open').hide().removeClass('open');
+				$('.drop.technology').show().addClass('open');
+				// console.log('this is working POLITICS!');
+			} else {
+				$('#slide-down .drop').hide();
+				$('.drop.technology').show().addClass('open');
+				$('#slide-down').slideDown(200).addClass('open');
+			}
+		} else{
+				$('#slide-down').slideUp(200).removeClass('open');
+
+		}
+
+	});//end of TECHNOLOGY
+
+	//CULTURE
+	$('#primary-nav .culture').on('click', function(e){
+
+		e.preventDefault();
+
+		$('#primary-nav .culture').siblings().removeClass('active');
+		$('#primary-nav .culture').toggleClass('active');
+
+		if($('#primary-nav .culture').hasClass('active')){
+			if($('#slide-down').hasClass('open')){
+				$('slide-down .drop.open').hide().removeClass('open');
+				$('.drop.culture').show().addClass('open');
+				// console.log('this is working POLITICS!');
+			} else {
+				$('#slide-down .drop').hide();
+				$('.drop.culture').show().addClass('open');
+				$('#slide-down').slideDown(200).addClass('open');
+			}
+		} else{
+				$('#slide-down').slideUp(200).removeClass('open');
+
+		}
+
+	});//end of CULTURE
+
+	//BLOGS
+	$('#primary-nav .blogs').on('click', function(e){
+
+		e.preventDefault();
+
+		$('#primary-nav .blogs').siblings().removeClass('active');
+		$('#primary-nav .blogs').toggleClass('active');
+
+		if($('#primary-nav .blogs').hasClass('active')){
+			if($('#slide-down').hasClass('open')){
+				$('slide-down .drop.open').hide().removeClass('open');
+				$('.drop.blogs').show().addClass('open');
+				// console.log('this is working POLITICS!');
+			} else {
+				$('#slide-down .drop').hide();
+				$('.drop.blogs').show().addClass('open');
+				$('#slide-down').slideDown(200).addClass('open');
+			}
+		} else{
+				$('#slide-down').slideUp(200).removeClass('open');
+
+		}
+
+	});//end of BLOGS
 
 })
