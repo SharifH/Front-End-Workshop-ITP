@@ -7,7 +7,7 @@ const {width, height, scale} = Dimensions.get("window"),
 
 export default StyleSheet.create({
     "orange": {
-        "backgroundColor": "orange"
+        "backgroundColor": "orange !important"
     },
     "yellow": {
         "backgroundColor": "yellow"
