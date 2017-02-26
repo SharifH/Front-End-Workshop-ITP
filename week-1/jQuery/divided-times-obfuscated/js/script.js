@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // A button click to lead to a drawer appearing with links or each nav item
 // slide up and slide down
 // adding classes to the buttons
@@ -6,6 +7,16 @@
 
 $(document).ready(function(){
 
+=======
+//  Abutton click to lead to a drawer appearing with links for each nav item
+// slide up and slide down
+// adding classes to the buttons
+// active open slide-down slide up
+// make sure that the other items dont have an active class
+$(document).ready(function(){
+
+// Internation navigation buttons
+>>>>>>> master
   $('#primary-nav .international').on('click', function(e){
     e.preventDefault();
     $('#primary-nav .international').siblings().removeClass('active');
@@ -14,6 +25,7 @@ $(document).ready(function(){
       if($('#slide-down').hasClass('open')){
         $('#slide-down .drop.open').hide().removeClass('open');
         $('.drop.international').show().addClass('open');
+<<<<<<< HEAD
     }else{
       $('#slide-down .drop').hide();
       $('.drop.international').show().addClass('open');
@@ -26,6 +38,20 @@ $(document).ready(function(){
 });
 })
 
+=======
+        console.log('this is working?');
+      }else{
+        $('#slide-down .drop').hide();
+        $('.drop.international').show().addClass('open');
+        $('#slide-down').slideDown(200).addClass('open');
+      }
+    }else{
+      $('#slide-down').slideUp(200).removeClass('open');
+    }
+  });
+
+// POLITICS
+>>>>>>> master
 $('#primary-nav .politics').on('click', function(e){
   e.preventDefault();
   $('#primary-nav .politics').siblings().removeClass('active');
@@ -34,6 +60,7 @@ $('#primary-nav .politics').on('click', function(e){
     if($('#slide-down').hasClass('open')){
       $('#slide-down .drop.open').hide().removeClass('open');
       $('.drop.politics').show().addClass('open');
+<<<<<<< HEAD
   }else{
     $('#slide-down .drop').hide();
     $('.drop.politics').show().addClass('open');
@@ -122,4 +149,31 @@ $('#primary-nav .blogs').on('click', function(e){
 } else{
   $('#slide-down').slideUp(200).removeClass('open');
 }
+=======
+      console.log('this is working?');
+    }else{
+      $('#slide-down .drop').hide();
+      $('.drop.politics').show().addClass('open');
+      $('#slide-down').slideDown(200).addClass('open');
+    }
+  }else{
+    $('#slide-down').slideUp(200).removeClass('open');
+  }
+});
+
+// BUSINESS
+
+
+// TECHNOLOGY
+
+
+// CULTURE
+
+
+// BLOGS
+
+
+
+
+>>>>>>> master
 });

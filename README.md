@@ -10,6 +10,10 @@
 
 [Mozilla Dev Network](https://developer.mozilla.org/en-US/)
 
+[jQuery Cheat Sheet](https://oscarotero.com/jquery/)
+
+[Git Cheat Sheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+
 
 ###What are these files
 ---
@@ -37,4 +41,6 @@ cd Front-End-Workshop-ITP
 ###HTML:CSS folder
 
 This folder contains a boilerplate static site which you can use to create new pages. I have added some HTML and a little bit of styling just so that we can see what is happening. We also have jQuery's unminified file as well so that we can look at the file to see how jQuery works, but I have also added the minified cdn source that way you can have an optimized page(this means any changes made to the jQuery file will not register on your page unless you change the reference on the index page).
+
+and wer'e fixing git
 
