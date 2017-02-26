@@ -1,24 +1,61 @@
 html{
+  background-color: white;
 
 }
 
 header{
+  background-color: #ffffff;
+  border-bottom: 1px solid black;
+  text-align: right;
+  padding: 0.4em;
 
 }
 
 h1{
+  text-align: left;
+  font-size: 3.5em;
+  margin: 0;
+  padding: 0.75em 0em;
+  color: black;
+  font-weight: lighter;
 
 }
 
-#containter{
+h3{
+color: #ffffff;
+display: block;
+}
+
+a{
+  text-decoration: none;
+  color: gray;
+  font-family:Helvetica;
+}
+
+video{
+ margin: 0 auto;
+ display: block;
+}
+
+#container{
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  border: 4px solid white;
+  margin-top: 20px;
+
+
 
 }
 
 #navigation{
+  display: inline-flex;
+
 
 }
 
 #section-1{
+  margin-top: 3%;
 
 }
 
@@ -31,9 +68,29 @@ h1{
 }
 
 .nav-item{
+  padding: 10px 20px;
+  list-style: none;
+
+}
+.boxes{
+display: inline-block;
+margin: 1.3%;
+width: 30%;
+height: 300px;
+}
+
+.img-box{
+height: 100%;
+width: 100%;
+object-fit: cover;
+  /*transition: filter 1s ease-in;*/
 
 }
 
-.boxes{
+.img-box:hover{
+  filter:blur(3px);
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  /*filter: brightness(50%);*/
 
 }
