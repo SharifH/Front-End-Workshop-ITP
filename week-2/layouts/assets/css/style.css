@@ -22,7 +22,7 @@ h1{
 }
 
 h3{
-color: #ffffff;
+color: #000000;
 display: block;
 }
 
@@ -36,7 +36,7 @@ a{
 
 video{
  margin: 0 auto;
- display: bloack;
+ display: block;
 }
 
 #container{
@@ -81,6 +81,14 @@ width: 30%;
 height: 300px;
 }
 
+.full-box{
+  display:block;
+  width: 60%;
+  margin: 0 auto;
+  padding: 2em;
+
+}
+
 .img-box{
 height: 100%;
 width: 100%;
@@ -88,6 +96,15 @@ object-fit: cover;
   /*transition: filter 1s ease-in;*/
 
 }
+
+.img-box-2{
+height: 100%;
+width: 100%;
+object-fit: cover;
+  /*transition: filter 1s ease-in;*/
+
+}
+
 
 .img-box:hover{
   filter:blur(3px);
